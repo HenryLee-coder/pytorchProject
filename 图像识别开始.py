@@ -41,7 +41,7 @@ data_trainsforms = {
         ])
 }
 
-# 字典生成式 {key: valid for key in [string,string]}
+# 字典生成式 {key: valid for key in [string,string]}2022年12月18日13:01:45
 my_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x), data_trainsforms[x]) for x in ['train', 'valid']}
 # 合成字典表达式
 # loader_lambda = DataLoader(my_datasets[x], batch_sizes= batch_size, shuffle= True)
