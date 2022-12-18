@@ -33,7 +33,7 @@ x_train, y_train, x_valid, y_valid = map(torch.tensor, (x_train, y_train, x_vali
 print(x_train.shape)
 
 bs = 64
-#关键一步使用DATASET与DATALOADER制作数据集
+# 关键一步使用DATASET与DATALOADER制作数据集
 train_ds = TensorDataset(x_train, y_train)
 train_dl = DataLoader(train_ds, batch_size=bs, shuffle=True)
 
@@ -43,7 +43,7 @@ valid_dl = DataLoader(valid_ds, batch_size=bs, shuffle=True)
 
 
 
-#3、模型搭建
+# 3、模型搭建
 class Mnist_NN(nn.Module):
     def __init__(self):
         super().__init__()
