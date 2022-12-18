@@ -70,7 +70,7 @@ scheduler = torch.optim.lr_scheduler.StepLR(my_opt, step_size=10, gamma=0.1)  # 
 my_loss = nn.CrossEntropyLoss()
 
 
-# 训练过程
+# 训练过程2022年12月18日13:40:19
 def train_model(model, dataloaders, numepochs, optimizer, loss, filename):
     # 设定训练过程的一系列指标
     val_acc_history = []
