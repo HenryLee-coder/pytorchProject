@@ -63,7 +63,7 @@ params_to_update = my_model.parameters()
 #         parameters_to_update.append(name)
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")  # 启用GPU
-# 4、开始训练
+# 4、开始训练2022年12月18日13:26:10
 # 优化器设定
 my_opt = torch.optim.Adam(params_to_update, lr=1e-2)  # 设定优化器
 scheduler = torch.optim.lr_scheduler.StepLR(my_opt, step_size=10, gamma=0.1)  # 优化学习率
