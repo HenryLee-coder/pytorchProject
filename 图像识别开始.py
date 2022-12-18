@@ -147,7 +147,7 @@ def train_model(model, dataloaders, numepochs, optimizer, loss, filename):
 
 
 
-
+# 单元测试
 if __name__ == '__main__':
     train_model(my_model, my_data_loaders, 20, my_opt, my_loss, my_wight)
 
