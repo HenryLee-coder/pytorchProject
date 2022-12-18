@@ -55,7 +55,7 @@ for param in my_model.parameters():  # 冻结参数
     param.requires_grad = False
 # 设定自己类别
 my_model.fc = nn.Linear(my_model.fc.in_features, numclasses)
-# 是否训练所有层
+# 是否训练所有层2022年12月18日13:24:35
 params_to_update = my_model.parameters()
 # parameters_to_update = []  # 查考需要更新的参数
 # for name, params in my_model.named_parameters():
