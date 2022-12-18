@@ -49,7 +49,7 @@ my_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x), data_trainsfor
 my_data_loaders = {x: DataLoader(my_datasets[x], batch_size= batch_sizes, shuffle= True) for x in ['train', 'valid']}
 data_size = {x: len(my_datasets[x]) for x in ['train', 'valid']}
 
-# 3、构建模型
+# 3、构建模型 2022年12月18日13:21:16
 my_model = getattr(models, model_name)(pretrained=True)  # 设定模型
 for param in my_model.parameters():  # 冻结参数
     param.requires_grad = False
